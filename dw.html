@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>當代三 L1 | By 秋莊</title>
+    <style>
+        :root {
+            --primary-blue: #0077aa;
+            --bg-gray: #f4f7f6;
+            --text-dark: #2c3e50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--bg-gray);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--text-dark);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0099cc, #0077aa);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .section-title {
+            background: #eef7fa;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-left: 5px solid var(--primary-blue);
+            margin: 20px 0;
+        }
+
+        /* Style cho phần Đối thoại */
+        .chat-box { padding: 20px; }
+        .msg { margin-bottom: 15px; }
+        .name { font-weight: bold; font-size: 0.9em; margin-bottom: 3px; display: block; }
+        .bubble { 
+            display: inline-block; 
+            padding: 10px 15px; 
+            border-radius: 15px; 
+            line-height: 1.6;
+            max-width: 90%;
+        }
+        .ads .bubble { background: #e3f2fd; border-bottom-left-radius: 2px; }
+        .lsd .bubble { background: #f5f5f5
