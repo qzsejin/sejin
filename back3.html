@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách từ vựng Hoa - Việt | By 秋莊</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 20px;
+            display: flex;
+            flex-direction: column; /* Xếp theo cột để đẩy footer xuống dưới */
+            align-items: center;
+        }
+
+        /* --- Code CSS thêm mới cho nút Trang chủ --- */
+        .home-link {
+            align-self: flex-start;
+            max-width: 850px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .btn-home {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: #0077aa;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        .btn-home:hover {
+            color: #d35400;
+            transform: translateX(-5px);
+        }
+        .btn-home i {
+            margin-right: 5px;
+        }
+        /* ------------------------------------------- */
+
+        .table-container {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 850px;
+            background-color: white;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        thead {
+            background: linear-gradient(135deg, #0099cc, #0077aa);
+            color: white;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+        /* Cột số thứ tự */
+        td:first-child {
+            font-weight: bold;
+            color: #888;
+            width: 40px;
+            text-align: center;
+            background-color: #fafafa;
+        }
+        tr:hover {
+            background-color: #f0faff;
+        }
+        .pinyin {
+            color: #d35400;
+            font-weight: 500;
+            margin-left: 5px;
+        }
+        /* Phần tên tác giả */
+        .footer {
+            margin-top: 20px;
+            text-align: right;
+            width: 100%;
+            max-width: 850px;
+            font-style: italic;
+            color: #555;
+            font-size: 1.1rem;
+        }
+        .author-name {
+            font-weight: bold;
+            color: #0077aa;
+            border-bottom: 2px solid #0077aa;
+            padding-bottom: 2px;
+        }
+        @media screen and (max-width: 600px) {
+            th, td { padding: 10px; font-size: 14px; }
+            .footer { text-align: center; }
+            .home-link { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="home-link">
+    <a href="index.html" class="btn-home">
+        🏠 Quay lại trang chủ
+    </a>
+</div>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Chinese (Pinyin)</th>
+                <th>Vietnamese</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>2</td><td>報告 <span class="pinyin">(bào gào)</span></td><td>báo cáo</td></tr>
+            <tr><td>3</td><td>嚴 <span class="pinyin">(yán)</span></td><td>nghiêm, nghiêm khắc</td></tr>
+            <tr><td>4</td><td>壓力 <span class="pinyin">(yā lì)</span></td><td>áp lực</td></tr>
+            <tr><td>5</td><td>說明 <span class="pinyin">(shuō míng)</span></td><td>giải thích, thuyết minh</td></tr>
+            <tr><td>6</td><td>清楚 <span class="pinyin">(qīng chǔ)</span></td><td>rõ ràng</td></tr>
+            <tr><td>7</td><td>位置 <span class="pinyin">(wèi zhì)</span></td><td>vị trí</td></tr>
+            <tr><td>8</td><td>旁聽 <span class="pinyin">(páng tīng)</span></td><td>dự thính</td></tr>
+            <tr><td>9</td><td>開學 <span class="pinyin">(kāi xué)</span></td><td>khai giảng, bắt đầu năm học</td></tr>
+            <tr><td>10</td><td>班 <span class="pinyin">(bān)</span></td><td>lớp</td></tr>
+            <tr><td>11</td><td>新生 <span class="pinyin">(xīn shēng)</span></td><td>tân sinh viên, học sinh mới</td></tr>
+            <tr><td>12</td><td>口試 <span class="pinyin">(kǒu shì)</span></td><td>thi vấn đáp</td></tr>
+            <tr><td>13</td><td>筆試 <span class="pinyin">(bǐ shì)</span></td><td>thi viết</td></tr>
+            <tr><td>14</td><td>以外 <span class="pinyin">(yǐ wài)</span></td><td>ngoài ra</td></tr>
+            <tr><td>15</td><td>口頭 <span class="pinyin">(kǒu tóu)</span></td><td>miệng, bằng lời nói</td></tr>
+            <tr><td>16</td><td>羨慕 <span class="pinyin">(xiàn mù)</span></td><td>ngưỡng mộ</td></tr>
+            <tr><td>17</td><td>分 <span class="pinyin">(fēn)</span></td><td>điểm, phần</td></tr>
+            <tr><td>18</td><td>休學 <span class="pinyin">(xiū xué)</span></td><td>nghỉ học (bảo lưu)</td></tr>
+            <tr><td>19</td><td>用功 <span class="pinyin">(yòng gōng)</span></td><td>chăm chỉ, cố gắng học</td></tr>
+            <tr><td>20</td><td>轉 <span class="pinyin">(zhuǎn)</span></td><td>chuyển, chuyển đổi</td></tr>
+            <tr><td>21</td><td>原來 <span class="pinyin">(yuán lái)</span></td><td>hóa ra, thì ra</td></tr>
+            <tr><td>22</td><td>會計 <span class="pinyin">(kuài jì)</span></td><td>kế toán</td></tr>
+            <tr><td>23</td><td>熱門 <span class="pinyin">(rè mén)</span></td><td>hot, được ưa chuộng</td></tr>
+            <tr><td>24</td><td>行 <span class="pinyin">(xíng)</span></td><td>được, ổn, có thể</td></tr>
+            <tr><td>25</td><td>熬夜 <span class="pinyin">(áo yè)</span></td><td>thức khuya</td></tr>
+            <tr><td>26</td><td>恐怕 <span class="pinyin">(kǒng pà)</span></td><td>e rằng, sợ rằng</td></tr>
+            <tr><td>27</td><td>當 <span class="pinyin">(dāng)</span></td><td>làm, đảm nhiệm; khi</td></tr>
+            <tr><td>28</td><td>口才 <span class="pinyin">(kǒu cái)</span></td><td>tài ăn nói</td></tr>
+            <tr><td>29</td><td>遲到 <span class="pinyin">(chí dào)</span></td><td>đến muộn</td></tr>
+            <tr><td>30</td><td>這樣下去 <span class="pinyin">(zhè yàng xià qù)</span></td><td>tiếp tục như thế này</td></tr>
+            <tr><td>31</td><td>沒辦法 <span class="pinyin">(méi bàn fǎ)</span></td><td>không có cách nào</td></tr>
+            <tr><td>32</td><td>差一點 <span class="pinyin">(chà yì diǎn)</span></td><td>suýt nữa</td></tr>
+            <tr><td>33</td><td>理想 <span class="pinyin">(lǐ xiǎng)</span></td><td>lý tưởng</td></tr>
+            <tr><td>34</td><td>不管 <span class="pinyin">(bù guản)</span></td><td>bất kể, không cần biết</td></tr>
+            <tr><td>35</td><td>手續 <span class="pinyin">(shǒu xù)</span></td><td>thủ tục</td></tr>
+            <tr><td>36</td><td>私立 <span class="pinyin">(sī lì)</span></td><td>tư lập</td></tr>
+            <tr><td>37</td><td>反對 <span class="pinyin">(fǎn duì)</span></td><td>phản đối</td></tr>
+            <tr><td>38</td><td>申請 <span class="pinyin">(shēn qǐng)</span></td><td>xin, đăng ký</td></tr>
+            <tr><td>39</td><td>獨生女 <span class="pinyin">(dú shēng nǚ)</span></td><td>con gái một</td></tr>
+            <tr><td>40</td><td>推薦信 <span class="pinyin">(tuī jiàn xìn)</span></td><td>thư giới thiệu</td></tr>
+            <tr><td>41</td><td>成績單 <span class="pinyin">(chéng jì dān)</span></td><td>bảng điểm</td></tr>
+            <tr><td>42</td><td>合 <span class="pinyin">(hé)</span></td><td>hợp, phù hợp</td></tr>
+            <tr><td>43</td><td>表 <span class="pinyin">(biǎo)</span></td><td>bảng, biểu mẫu</td></tr>
+            <tr><td>44</td><td>填 <span class="pinyin">(tián)</span></td><td>điền (vào đơn, bảng)</td></tr>
+            <tr><td>45</td><td>痛苦 <span class="pinyin">(tòng kǔ)</span></td><td>đau khổ</td></tr>
+            <tr><td>46</td><td>外語 <span class="pinyin">(wài yǔ)</span></td><td>ngoại ngữ</td></tr>
+            <tr><td>47</td><td>考上 <span class="pinyin">(kǎo shàng)</span></td><td>thi đậu</td></tr>
+            <tr><td>48</td><td>科系 <span class="pinyin">(kē xì)</span></td><td>khoa, ngành học</td></tr>
+            <tr><td>49</td><td>擔心 <span class="pinyin">(dān xīn)</span></td><td>lo lắng</td></tr>
+            <tr><td>50</td><td>個性 <span class="pinyin">(gè xì)</span></td><td>tính cách</td></tr>
+            <tr><td>51</td><td>放棄 <span class="pinyin">(fàng qì)</span></td><td>từ bỏ</td></tr>
+            <tr><td>52</td><td>活潑 <span class="pinyin">(huó pō)</span></td><td>hoạt bát</td></tr>
+            <tr><td>53</td><td>辦 <span class="pinyin">(bàn)</span></td><td>làm, xử lý</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="footer">
+    By <span class="author-name">秋莊</span>
+</div>
+
+</body>
+</html>
