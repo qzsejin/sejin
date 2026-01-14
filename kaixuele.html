@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>當代中文課程三 L1 | By 秋莊</title>
+    <style>
+        :root {
+            --primary: #0077aa;
+            --secondary: #0099cc;
+            --bg: #f8f9fa;
+            --text: #2c3e50;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            background: var(--white);
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Style cho Bảng từ vựng */
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        .vocab-table th { background: var(--secondary); color: white; }
+        .vocab-table td, .vocab-table th { padding: 12px; border: 1px solid #eee; text-align: left; }
+        .vocab-table tr:nth-child(even) { background: #fafafa; }
+        .pinyin { color: #d35400; font-size: 0.9em; margin-left: 5px; }
+
+        /* Style cho Đối thoại */
+        .chat-container { display: flex; flex-direction: column; gap: 15px; }
+        .msg { display: flex; flex-direction: column; }
+        .name { font-weight: bold; font-size: 0.85em; margin-bottom: 3px; }
+        .bubble { padding: 12px 18px; border-radius: 18px; max-width: 85%; }
+        
+        .ads .bubble { background: #e3f2fd; color: #0052cc; align-self: flex-start; border-bottom-left-radius: 2px; }
+        .lsd .bubble { background: #f0f0f0; color: #333; align-self: flex-start; border-bottom-left-radius: 2px; }
+        .hyt .bubble { background: #fff1f0; color: #cc0000; align-self: flex-start; border-bottom-left-radius: 2px; }
+        .ads .name { color: #0052cc; }
+        .hyt .name { color: #cc0000; }
+
+        /* Style cho Đoạn văn */
+        .article { line-height: 2.2; font-size: 1.15rem; text-align: justify; }
+
+        .footer {
+            text-align: right;
+            padding: 20px;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .author-name { font-weight: bold; color: var(--primary); border-bottom: 2px solid var(--primary); }
+
+        @media (max-width: 600px) {
+            .container { padding: 10px; }
+            section { padding: 15px; }
+            .bubble { max-width: 95%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <h1>當代中文課程三 - 第一課</h1>
+</div>
+
+<div class="container">
+    
+    <section id="dialogue">
+        <h2><i class="icon">💬</i> 對話：開學了</h2>
+        <div class="chat-container">
+            <div class="msg ads"><span class="name">安德思</span><div class="bubble">羅珊蒂,下課啦!怎麼樣?你們班上有我們上個學期的同學嗎?</div></div>
+            <div class="msg lsd"><span class="name">羅珊蒂</span><div class="bubble">沒有,都沒有。你們班怎麼樣?</div></div>
+            <div class="msg ads"><span class="name">安德思</span><div class="bubble">處理都是新生,我一個也不認識,而且只有 i một mình tôi là con trai. (而且只有我一個男的)</div></div>
+            <div class="msg lsd"><span class="name">羅珊蒂</span><div class="bubble">老師呢?老師怎麼樣?</div></div>
+            <div class="msg ads"><span class="name">安德思</span><div class="bubble">老師很嚴。他說我們這學期除了每一課的口試、筆試以外,還要做兩次口頭報告。我覺得壓力好大。你們班呢?</div></div>
+            <div class="msg lsd"><span class="name">羅珊蒂</span><div class="bubble">老師的說明很清楚,同學也很熱情。我們今天就一起去吃中飯了。</div></div>
+            <div class="msg ads"><span class="name">安德思</span><div class="bubble">聽起來不錯。還有位子嗎?有位子的話,我想去旁聽。</div></div>
+            <div class="msg lsd"><span class="name">羅珊蒂</span><div class="bubble">你想換班啊?你不是打算在台灣上大學嗎?老師嚴才學得快,學得好啊。</div></div>
+            <div class="msg ads"><span class="name">安德思</span><div class="bubble">可是我是獎學金學生。要是成績不到80分,拿不到獎學金,就得回國了。</div></div>
+            <div class="msg lsd"><span class="name">羅珊蒂</span><div class="bubble">我真羡慕你有獎學金。不像我休學來台灣,花的都是父母的錢,一定得用功念書才行。</div></div>
+            
+            <hr style="width:100%; border:0; border-top:1px solid #eee; margin:10px 0;">
+            
+            <div class="msg ads"><span class="name">安德思</span><div class="bubble">何雅婷,聽說妳轉系了?</div></div>
+            <div class="msg hyt"><span class="name">何雅婷</span><div class="bubble">是啊,這個學期我轉到國際關係系去了</div></div>
+            <div class="msg ads"><span class="name">安德思</span><div class="bubble">妳原來念的會計系不是很熱門嗎?怎麼不念了?</div></div>
+            <div class="msg hyt"><span class="name">何雅婷</span><div class="bubble">我念不下去了。我每天熬夜念書,可是還是差一點被當。這樣下去,四年恐怕沒辦法畢業。</div></div>
+            <div class="msg lsd"><span class="name">羅珊蒂</span><div class="bubble">念國際關係很適合妳。妳的英文那麼流利, 口才又好,以後可以當外交人員。</div></div>
+            <div class="msg hyt"><span class="name">何雅婷</span><div class="bubble">謝謝妳這麼說。我真想多跟你們聊聊。可惜我得走了,我跟教授約好了討論選課的事,不能遲到。再見。</div></div>
+        </div>
+    </section>
+
+    <section id="article">
+        <h2><i class="icon">📖</i> 短文：何雅婷要轉系</h2>
+        <div class="article">
+            何雅婷是家裡的獨生女。從小父母讓她念私立小學,下了課還去學西班牙文、書法、游泳跟網球。何雅婷也沒讓父母失望,成績一直都很好,還考上了理想的大學,念的是熱門的會計系。沒想到才念了一個學期,她就發現跟她的興趣不合,念起來非常痛苦。她想了很久,決定跟媽媽討論轉系的事。<br><br>
+            媽媽聽到何雅婷打算轉到國際關係系,非常生氣。她覺得何雅婷好不容易才考上這麼好的科系,怎麼可以說放棄就放棄?而且,念會計系工作機會比較多。跟興趣比起來,將來的發展當然更重要。如果她真的對別의課有興趣,利用時間去旁聽就好了。不管何雅婷怎麼說,她都反對。<br><br>
+            不過何雅婷告訴媽媽,她個性活潑,而且外語能力不錯,如果念國際關係,會有更好的成績,請媽媽不必擔心她的將來。這一次就請媽媽讓她自己決定吧。媽媽想了又想,捨不得女兒念得這麼痛苦,最後還是同意了。何雅婷聽了非常高興,她立刻上網填表辦轉系的手續,申請上學期的成績單,然後還請教授幫她寫推薦信。
+        </div>
+    </section>
+
+</div>
+
+<div class="footer">
+    By <span class="author-name">秋莊</span>
+</div>
+
+</body>
+</html>
