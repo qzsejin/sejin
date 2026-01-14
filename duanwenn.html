@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>當代中文課程三 L1 | By 秋莊</title>
+    <style>
+        :root {
+            --primary: #0077aa;
+            --secondary: #0099cc;
+            --accent: #e67e22;
+            --bg: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        section {
+            background: var(--white);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--accent);
+            padding-left: 15px;
+            margin-top: 0;
+        }
+
+        /* Bảng từ vựng */
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .vocab-table th { background-color: var(--secondary); color: white; }
+        .vocab-table td, .vocab-table th { padding: 12px; border: 1px solid #eee; text-align: left; }
+        .pinyin { color: var(--accent); font-weight: 500; }
+
+        /* Hội thoại chat */
+        .chat-box { display: flex; flex-direction: column; gap: 15px; }
+        .msg { max-width: 85%; padding: 12px 18px; border-radius: 15px; line-height: 1.5; }
+        .name { font-weight: bold; font-size: 0.8em; display: block; margin-bottom: 5px; }
+        
+        .ads { background: #e3f2fd; align-self: flex-start; border-bottom-left-radius: 2px; }
+        .lsd { background: #f5f5f5; align-self: flex-start; border-bottom-left-radius: 2px; }
+        .hyt { background: #fff1f0; align-self: flex-start; border-bottom-left-radius: 2px; }
+
+        /* Đoạn văn */
+        .essay-content {
+            font-size: 1.2rem;
+            line-height: 2.2;
+            text-align: justify;
+            white-space: pre-line;
+        }
+
+        footer {
+            text-align: right;
+            padding: 30px;
+            font-size: 1.2rem;
+            color: #666;
+            font-style: italic;
+        }
+        .author-tag { color: var(--primary); font-weight: bold; border-bottom: 2px solid; }
+
+        @media (max-width: 600px) {
+            .msg { max-width: 95%; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>當代中文課程三 - 第一課</h1>
+    <p>開學 rồi (Bắt đầu năm học mới)</p>
+</header>
+
+<div class="container">
+    
+    <section>
+        <h2>1. 生詞 (Từ vựng)</h2>
+        <table class="vocab-table">
+            <thead>
+                <tr>
+                    <th>Hán tự</th>
+                    <th>Pinyin</th>
+                    <th>Nghĩa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>報告</td><td class="pinyin">bào gào</td><td>báo cáo</td></tr>
+                <tr><td>壓力</td><td class="pinyin">yā lì</td><td>áp lực</td></tr>
+                <tr><td>清楚</td><td class="pinyin">qīng chǔ</td><td>rõ ràng</td></tr>
+                <tr><td>旁聽</td><td class="pinyin">páng tīng</td><td>dự thính</td></tr>
+                <tr><td>轉</td><td class="pinyin">zhuǎn</td><td>chuyển (khoa, ngành)</td></tr>
+                <tr><td>熱門</td><td class="pinyin">rè mén</td><td>hot, thịnh hành</td></tr>
+            </tbody>
+        </table>
+        <p style="font-size: 0.8em; color: #888; margin-top: 10px;">* Xem thêm danh sách đầy đủ trong hình ảnh của bạn.</p>
+    </section>
+
+    <section>
+        <h2>2. 對話 (Đối thoại): 開學了</h2>
+        <div class="chat-box">
+            <div class="msg ads"><span class="name" style="color:#1976d2">安德思</span>羅珊蒂,下課啦!怎麼樣?你們班上有我們上個學期的同學嗎?</div>
+            <div class="msg lsd"><span class="name" style="color:#555">羅珊蒂</span>沒有,都沒有。你們班怎麼樣?</div>
+            <div class="msg ads"><span class="name" style="color:#1976d2">安德思</span>處理都是新生,我一個也不認識,而且只有我一個男的。</div>
+            <div class="msg lsd"><span class="name" style="color:#555">羅珊蒂</span>老師呢?老師怎麼樣?</div>
+            <div class="msg ads"><span class="name" style="color:#1976d2">安德思</span>老師很嚴。他說我們這學期除了每一課的口試、筆試以外,還要做兩次口頭報告。</div>
+            <div class="msg lsd"><span class="name" style="color:#555">羅珊蒂</span>老師的說明很清楚,同學也很熱情。</div>
+            <hr style="width:100%; border:0; border-top:1px solid #eee;">
+            <div class="msg hyt"><span class="name" style="color:#d32f2f">何雅婷</span>是啊,這個學期我轉到國際關係系去了。我每天熬夜念書,可是還是差一點被當。</div>
+            <div class="msg lsd"><span class="name" style="color:#555">羅珊蒂</span>念國際關係很適合妳。妳的英文那麼流利,口才又好,以後可以當外交人員。</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. 短文 (Đoạn văn): 何雅婷要轉系</h2>
+        <div class="essay-content">
+            何雅婷是家裡的獨生女。從小父母讓她念私立小學,下了課還去學西班牙文、書法、游泳跟網球。何雅婷也沒讓父母失望,成績一直都很好,還考上了理想的大學,念的是熱門的會計系。沒想到才念了一個學期,她就發現跟她的興趣不合,念起來非常痛苦。她想了很久,決定跟媽媽討論轉系的事。
+
+            媽媽聽到何雅婷打算轉到國際關係系,非常生氣。她覺得何雅婷好不容易才考上這麼好的科系,怎麼可以說放棄就放棄?而且,念會計系工作機會比較多。跟興趣比起來,將來的發展當然更重要。如果她真的對別的課有興趣,利用時間去旁聽就好了。不管何雅婷怎麼說,她都反對。
+
+            不過何雅婷告訴媽媽,她個性活潑,而且外語能力不錯,如果念國際關係,會有更好的成績,請媽媽不必擔心她的將來。這一次就請媽媽讓她自己決定吧。媽媽想了又想,捨不得女兒念得這麼痛苦,最後還是同意了。何雅婷聽了非常高興,她立刻上網填表辦轉系的手續,申請上學期的成績單,然後還請教授幫她寫推薦信。
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    By <span class="author-tag">秋莊</span>
+</footer>
+
+</body>
+</html>
